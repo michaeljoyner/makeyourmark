@@ -7,11 +7,11 @@
         <h3 style="text-align:center;color:#F2842E;">Here is a bit about us</h3>
 
         @if($generalBrief['since'] != '' && $generalBrief['industry'] != '')
-            <p>We have been operating in the <span style="color:#3EB7AE;">{{ $generalBrief['industry'] }}</span> industry since <span style="color:#3EB7AE;">{{ $generalBrief['since'] }}</span></p>
+            <p>We have been operating in the <span style="color:#3EB7AE;">{{ $generalBrief['industry'] }}</span> industry for <span style="color:#3EB7AE;">{{ $generalBrief['since'] }} years</span></p>
         @endif
 
         @if($generalBrief['since'] != '' && $generalBrief['industry'] == '')
-            <p>We have been operating since <span style="color:#3EB7AE;">{{ $generalBrief['since'] }}</span></p>
+            <p>We have been operating for <span style="color:#3EB7AE;">{{ $generalBrief['since'] }} years.</span></p>
         @endif
 
         @if($generalBrief['since'] == '' && $generalBrief['industry'] != '')
