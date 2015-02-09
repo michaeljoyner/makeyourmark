@@ -8,9 +8,13 @@
 }
 
 .get-started-outro p a {
-  color: #F2842E;
+  color: $pasty_red;
   text-decoration: none;
   padding-top: 0;
   padding-bottom: 0;
   display: inline;
+
+  &:hover {
+    color: darken($pasty_red, 20%);
+  }
 }

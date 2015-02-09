@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'Gotham';
   src: url('../../fonts/gotham_book.otf'); }
@@ -251,10 +250,13 @@ html, body {
 .control-panel {
   margin-bottom: 2em; }
   .control-panel p {
-    text-align: center; }
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left; }
 
 .control-panel label {
-  font-size: xx-large; }
+  font-size: xx-large;
+  font-weight: 200; }
   @media only screen and (max-width: 480px) {
     .control-panel label {
       font-size: x-large; } }
@@ -286,10 +288,10 @@ html, body {
     border-radius: 50%;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); }
   #briefform [type="checkbox"]:not(:checked) + label:after, #briefform [type="checkbox"]:checked + label:after {
-    content: '✔';
+    content: "\25CF";
     position: absolute;
-    top: 0px;
-    left: -20px;
+    top: -4px;
+    left: -13px;
     font-size: 32px;
     color: #3EB7AE;
     transition: all .4s; }
@@ -2303,11 +2305,13 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   padding-left: 1em; }
 
 .get-started-outro p a {
-  color: #F2842E;
+  color: #EF4A4F;
   text-decoration: none;
   padding-top: 0;
   padding-bottom: 0;
   display: inline; }
+  .get-started-outro p a:hover {
+    color: #c21116; }
 
 #thank-banner {
   margin: 5em auto;
