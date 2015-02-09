@@ -49,12 +49,12 @@ class BriefsController extends Controller {
 	{
 		if(! $this->imageFileValidator->validate($request->file('logo_uploads')))
 		{
-			return redirect('/form')->withInput()->with('logoUploadErrors', $this->imageFileValidator->getMessages());
+			return redirect('/getstarted')->withInput()->with('logoUploadErrors', $this->imageFileValidator->getMessages());
 		}
 
 		if(! $this->imageOrDocFileValidator->validate($request->file('brand_uploads')))
 		{
-			return redirect('/form')->withInput()->with('brandUploadErrors', $this->imageOrDocFileValidator->getMessages());
+			return redirect('/getstarted')->withInput()->with('brandUploadErrors', $this->imageOrDocFileValidator->getMessages());
 		}
 
 		$generalBriefCommand = new GeneralBriefSubmittedCommand($request->only($request->generalFields));
