@@ -84,6 +84,9 @@
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
+    @include respond-to(phone) {text-align: center;}
+    @include respond-to(supersmalltablet) {text-align: center;}
+    @include respond-to(smalltablet) {text-align: center;}
   }
 }
 

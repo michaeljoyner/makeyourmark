@@ -188,8 +188,8 @@ html, body {
   text-decoration: none;
   color: inherit; }
 
-.footer-nav a:hover {
-  text-decoration: underline; }
+.footer-nav li:hover {
+  color: #3EB7AE; }
 
 #briefform {
   max-width: 800px;
@@ -253,6 +253,15 @@ html, body {
     max-width: 500px;
     margin: 0 auto;
     text-align: left; }
+    @media only screen and (max-width: 480px) {
+      .control-panel p {
+        text-align: center; } }
+    @media only screen and (min-width: 481px) and (max-width: 575px) {
+      .control-panel p {
+        text-align: center; } }
+    @media only screen and (min-width: 576px) and (max-width: 650px) {
+      .control-panel p {
+        text-align: center; } }
 
 .control-panel label {
   font-size: xx-large;
