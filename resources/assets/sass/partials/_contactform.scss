@@ -72,6 +72,10 @@
 
 #show-cf-btn {
   cursor: pointer;
+
+  &:hover {
+    color: $pasty_red;
+  }
 }
 
 #fa-send-icon {
