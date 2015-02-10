@@ -3,6 +3,13 @@
 @section('title')
   <title>Get Started | Make Your Mark</title>
 @stop
+@section('description')
+<meta name="description" content="Do you want to get started on your project? Fill out the forms and get on the way to really Make Your Mark."/>
+@stop
+
+@section('fb_description')
+<meta property="og:description" content="Do you want to get started on your project? Fill out the forms and get on the way to really Make Your Mark."/>
+@stop
 
 @section('head')
   <meta property="CSRF-token" content="{{ Session::token() }}"/>
