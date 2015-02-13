@@ -11,7 +11,7 @@ namespace App\Mailers;
 
 class AdminMailer extends BaseMailer {
 
-    protected $to = ['joyner.michael@gmail.com' =>'Michael Joyner'];
+    protected $to = ['joyner.michael@gmail.com' =>'Michael Joyner', 'maxbizley@gmail.com' => 'Max Bizley', 'ryankiepiel@yahoo.com' => 'Ryan Kiepiel'];
 
     public function sendLogoBriefNotification($logoBrief, $generalBrief)
     {
