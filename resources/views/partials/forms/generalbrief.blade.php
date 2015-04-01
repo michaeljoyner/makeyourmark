@@ -5,7 +5,7 @@
         <div class="form-group">
             {!! Form::label('contact_person', 'Contact Name') !!}
             {!! $errors->first('contact_person', '<span class="text-danger">:message</span>') !!}
-            {!! Form::text('contact_person', Input::old('contact_person'), ['class' => 'form-control']) !!}
+            {!! Form::text('contact_person', Input::old('contact_person'), ['class' => 'form-control', 'required' => 'required']) !!}
         </div>
     </div>
     <div class="col-md-offset-2 col-md-5">
@@ -13,7 +13,7 @@
         <div class="form-group">
             {!! Form::label('email', 'Email') !!}
             {!! $errors->first('email', '<span class="text-danger">:message</span>') !!}
-            {!! Form::email('email', Input::old('email'), ['class' => 'form-control']) !!}
+            {!! Form::email('email', Input::old('email'), ['class' => 'form-control', 'required' => 'required']) !!}
         </div>
     </div>
 </div>
