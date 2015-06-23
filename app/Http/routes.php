@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('clothing', 'WelcomeController@showClothing');
+Route::get('gifting', 'WelcomeController@showGifting');
 
 Route::get('home', 'HomeController@index');
 

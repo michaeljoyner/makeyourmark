@@ -50,4 +50,14 @@ class WelcomeController extends Controller {
 		return view('thanks');
 	}
 
+    public function showClothing()
+    {
+        return view('clothing');
+    }
+
+    public function showGifting()
+    {
+        return view('gifting');
+    }
+
 }

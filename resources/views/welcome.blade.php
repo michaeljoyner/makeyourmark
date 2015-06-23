@@ -4,13 +4,7 @@
 @stop
 @section('content')
   @include('partials.logoheader')
-  <nav class="page-nav">
-    <ul class="page-nav-list">
-      <li class="fluid menu"><a href="#about">ABOUT</a></li>
-      <li class="fluid menu"><a href="#services">SERVICES</a></li>
-      <li class="fluid menu"><a href="#contact">CONTACT</a></li>
-    </ul>
-  </nav>
+  @include('partials.pagenav')
   <section>
     <article class="bannerText">
       <p>superior</p>
