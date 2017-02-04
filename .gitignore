@@ -4,3 +4,4 @@
 /.idea
 .idea
 /public/useruploads/*
+.DS_Store
